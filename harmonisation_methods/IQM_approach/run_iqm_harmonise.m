@@ -9,11 +9,11 @@ load(fullfile(maindir, 'IQM_approach', 'iqm_list'));
 data            = final_iqm;
 data.age        = zscore(data.Final_Age);
 data.zscore_age = zscore(data.Final_Age);
-data.batch      = data.Site;
+data.batch      = data.Site; % change this when using other batch variable e.g., "Scanner"
 data.timepoint  = data.timepoint;
 data.subjectID  = data.subjectID;
 
 data           = data(~ismember(data.subjectID, {'UCL006'}),:);
-harmonisedData = iqm_harmonise_working(data, idp_list, iqm_list, 95, 0.05,Inf,'iqm_harmonised.csv');
+harmonisedData = iqm_harmonise(data, idp_list, iqm_list, 95, 0.05,Inf,'iqm_harmonised.csv');
 
 
