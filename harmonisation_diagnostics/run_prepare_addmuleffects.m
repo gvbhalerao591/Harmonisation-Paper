@@ -1,0 +1,19 @@
+%%
+
+maindir = '/Users/psyc1586_admin/GVB_data/harmonisation_work/00_aa_skullImprovement_Oct2025/00_running_for_paper/run_eval_metrics_IQMscannerOnly/data';
+fname   = 'data.mat';
+load(fullfile(maindir, fname));
+
+yourStruct = data;
+idpNames   = {'T1_FIRST_left_hippocampus',...
+              'T1_FIRST_right_hippocampus', ...
+              'T1_SIENAX_CSF_norm_vol', ...
+              'T1_SIENAX_GM_norm_vol', ...
+              'T1_SIENAX_WM_norm_vol', ...
+              'T1_SIENAX_brain_norm_vol', ...
+              'T1_SIENAX_periphGM_norm_vol'};
+outputDir = fullfile(maindir, 'addmuleffects');
+
+prepare_addmuleffects(yourStruct, idpNames, outputDir)
+
+%% After this run the R code - batch_run_addmuleffects.R which uses function run_AddMulEffects.R
