@@ -33,7 +33,12 @@ Harmonisation-Paper/
 ├── harmonisation_diagnostics/
 │   Codes and functions used to calculate harmonisation evaluation metrics
 │
+├── manuscript materials/│
+│   Appendix A: IQM-informed harmonisation methodology
+│   supplementary docx and excel file with additional results
+│
 └── README.md
+
 ```
 
 ---
