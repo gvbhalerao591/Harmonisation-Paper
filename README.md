@@ -10,9 +10,9 @@ The work focuses on harmonisation across site, scanner, or mixed batch effects u
 
 Multi-site neuroimaging studies are susceptible to systematic variability introduced by differences in scanners, acquisition protocols, and imaging sites. This project provides a framework for:
 
-- Applying multiple harmonisation approaches  
-- Quantitatively evaluating harmonisation performance  
-- Comparing the impact of harmonisation on imaging-derived phenotypes (IDPs)  
+- Apply multiple harmonisation approaches  
+- Quantitatively evaluate harmonisation performance  
+- Compare the impact of harmonisation on imaging-derived phenotypes (IDPs)  
 
 The aim is to support transparent, reproducible, and robust assessment of batch-effect correction methods.
 
@@ -22,10 +22,6 @@ The aim is to support transparent, reproducible, and robust assessment of batch-
 
 ```text
 Harmonisation-Paper/
-│
-├── data/
-│   └── data.mat
-│       Raw and harmonised imaging-derived phenotypes (IDPs)
 │
 ├── harmonisation_methods/
 │   Codes used to run harmonisation methods on the original (raw) IDPs
@@ -40,18 +36,6 @@ Harmonisation-Paper/
 └── README.md
 
 ```
-
----
-
-## Data
-
-- **`data/data.mat`**  
-  Contains raw IDPs and harmonised outputs generated using different methods.  
-  The data originate from the DPUK PET-MR test–retest dataset and are provided for method evaluation and comparison.
-
-> Access to the original dataset may be subject to DPUK data access and governance policies.
-
----
 
 ## Harmonisation Methods
 
@@ -84,14 +68,11 @@ This repository is intended for:
 - Benchmarking harmonisation approaches  
 - Reproducible analysis of multi-site neuroimaging data  
 
----
+## Python-version
 
-## Citation
-
-If you use this repository in your work, please cite the associated publication (details to be added).
-
+Python version of this code is available [elsewhere](https://jake-turnbull.github.io/HarmonizationDiagnostics/) 
 ---
 
 ## Contact
 
-For questions, feedback, or contributions, please open an issue or contact the repository maintainers.
+For questions, feedback, or contributions, please open an issue or contact [Gaurav Bhalerao](gaurav.bhalerao@ndcn.ox.ac.uk).
