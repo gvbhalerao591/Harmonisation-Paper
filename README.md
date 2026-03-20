@@ -70,7 +70,7 @@ This repository is intended for:
 
 ## Python-version
 
-Python version of this code is available [elsewhere](https://jake-turnbull.github.io/HarmonizationDiagnostics/) 
+- Python version of this code is available [elsewhere](https://jake-turnbull.github.io/HarmonizationDiagnostics/) 
 ---
 
 ## Contact
