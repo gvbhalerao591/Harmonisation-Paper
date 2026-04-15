@@ -70,7 +70,7 @@ This repository is intended for:
 
 ## Python-version
 
-- The evaluation metrics in this study are now included in the DiagnoseHarmonise library. It is written fully in Python (See [DHARM])(https://jake-turnbull.github.io/HarmonisationDiagnostics/) 
+- The evaluation metrics in this study are now included in the DiagnoseHarmonise library. It is written fully in Python (See [DHARM](https://jake-turnbull.github.io/HarmonisationDiagnostics/)) 
 ---
 
 ## Contact
