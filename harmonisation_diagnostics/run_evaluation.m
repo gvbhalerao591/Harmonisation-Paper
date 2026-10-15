@@ -17,10 +17,6 @@ idp_list = {'T1_SIENAX_headsize_scaling',...
 'T1_FIRST_left_hippocampus',...
 'T1_FIRST_right_hippocampus'}';
 
-% bonferroni correction for pairwise site comparison
-p_thr   = 0.05/length(idp_list);
-
-
 %% Sanity check
 fields   = fieldnames(data); % Get all field names
 
@@ -137,6 +133,9 @@ timepoint = "timepoint";
 age       = "Final_Age";
 site      = "Site";
 scanner   = "Scanner";
+
+% bonferroni correction for pairwise site comparison
+p_thr   = 0.05/length(finalidplist);
 
 %% 1) RPD - within-subject variability
 
