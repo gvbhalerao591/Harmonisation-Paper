@@ -1,4 +1,4 @@
-function data = iqm_harmonise_working(data, idp_list, qc_list, iqm_variance, p_thr, max_qcs,outfilename)
+function data = iqm_harmonise(data, idp_list, qc_list, iqm_variance, p_thr, max_qcs,outfilename)
     % iqm_harmonise_working: Harmonization matching the proven working code
     %
     % KEY DIFFERENCES from "rigorous" versions:
@@ -358,7 +358,7 @@ function data = iqm_harmonise_working(data, idp_list, qc_list, iqm_variance, p_t
     fprintf('\nStep 5: Saving results...\n');
     
     writetable(data, outfilename);
-    fprintf('  Data saved: iqm_harmonized_working.csv\n');
+    fprintf('  Data saved \n');
     
     qc_selection.p_threshold = p_thr;
     qc_selection.max_qcs = max_qcs;
